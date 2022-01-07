@@ -7,19 +7,19 @@
     <center>
     <h1>PHP DB connection Test!!</h1>
     <?php
-        // $servername = getenv('DB_HOST');
-        // $database = getenv('DB_NAME');
-        // $username = getenv('DB_USERNAME');
-        // $password = getenv('DB_PASSWORD');
+        $servername = getenv('DB_HOST');
+        $database = getenv('DB_NAME');
+        $username = getenv('DB_USERNAME');
+        $password = getenv('DB_PASSWORD');
         // echo $servername;
         // echo $database;
         // echo $username;
         // echo $password;
-        echo $_ENV["DB_HOST"];
-        $servername = "vipin-rds.cdxhhswkgl8b.us-east-2.rds.amazonaws.com";
-        $database = "testdb";
-        $username = "vipin";
-        $password = "vipin123";
+//         echo $_ENV["DB_HOST"];
+//         $servername = "vipin-rds.cdxhhswkgl8b.us-east-2.rds.amazonaws.com";
+//         $database = "testdb";
+//         $username = "vipin";
+//         $password = "vipin123";
         // Create connection
         $conn = @new mysqli($servername, $username, $password);
         // Check connection
